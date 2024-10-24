@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="grid-page">
+     <!-- Navbar Start -->
+     <nav>
+        <div class="navWrap">
+            <div class="logo">
+                <h1>MIS 455</h1>
+            </div>
+            <div class="navItems">
+                <a class="navItem" href="index.html" >Home</a>
+            <a class="navItem" href="about.html" >About</a>
+            <a class="navItem" href="Flex.html" >Flex</a>
+            <a class="navItem" href="Grid.html" >Grid</a>
+            <a class="navItem" href="gallary.html" >Gallery</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <h1 style="margin-top: 50px; " class="details-title">We will learn about Css Grid</h1>
+    <Section class="intro">
+        <img src="./img/grid.png" alt="" class="details-pic">
+        <div class="intro-details">
+            <p>The CSS grid layout module excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives. Like tables, grid layout enables an author to align elements into columns and rows. However, many more layouts are either possible or easier with CSS grid than they were with tables. For example, a grid container's child elements could position themselves so they actually overlap and layer, similar to CSS positioned elements.
+            </p>
+            <button class="flex-btn"><a href="https://youtu.be/kEFIdXzQXYw?si=dpaIgB3cOAAjm6XM" target="_blank">Learn More</a></button>
+        </div>
+    </Section>
+    <section class="grid-section">
+        <h1 class="details-title" style="margin-top: 50px;">Grid Basic</h1>
+        <p class="flex-p">
+            Create a grid container by setting the display property with a value of grid or inline-grid. All direct children of grid containers become grid items.
+        </p>
+        <div class="grid-wrap">
+            <div class="grid-item">
+                <div class="left-item">
+                    <span>display: grid</span>
+                    <p>Grid items are placed in rows by default and span the full width of the grid container.</p>
+                </div>
+                <div class="right-item"><img src="./img/g1.png" alt="" class="flex-pic"></div>
+            </div>
+            <div class="grid-item">
+                <div class="left-item">
+                    <span>display: inline-grid</span>
+                    <p>Grid items are placed in rows by default and span the full width of the grid container.</p>
+                </div>
+                <div class="right-item"><img src="./img/g2.png" alt="" class="flex-pic"></div>
+            </div>
+            <div class="grid-item">
+                <div class="left-item">
+                    <span>grid-template-rows: 50px 100px</span>
+                    <p>A row track is created for each value specified for <span>grid-template-rows</span>. <br>
+                        Items 1 and 2 have fixed heights of 50px and 100px.<br>
+                        Because only 2 row tracks were defined, heights of items 3 and 4 are defined by the contents of each.
+                    </p>
+                </div>
+                <div class="right-item"><img src="./img/g3.png" alt="" class="flex-pic"></div>
+            </div>
+            <div class="grid-item">
+                <div class="left-item">
+                    <span>grid-template-columns: 1fr 1fr 2fr</span>
+                    <p>The fr unit helps create flexible grid tracks. It represents a fraction of the available space in the grid container (works like Flexbox’s unitless values).</p>
+                </div>
+                <div class="right-item"><img src="./img/g4.png" alt="" class="flex-pic"></div>
+            </div>
+            <div class="grid-item">
+                <div class="left-item">
+                    <span>grid-row-gap: 20px;<br>
+                        grid-column-gap: 5rem;</span>
+                    <p>Gap size values can be any non-negative, length value (px, %, em, etc.)</p>
+                </div>
+                <div class="right-item"><img src="./img/g5.png" alt="" class="flex-pic"></div>
+            </div>
+            <div class="grid-item">
+                <div class="left-item">
+                    <span>grid-gap: 2rem</span>
+                    <p>One value sets equal row and column gaps.</p>
+                </div>
+                <div class="right-item"><img src="./img/g6.png" alt="" class="flex-pic"></div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+</body>
+</html>

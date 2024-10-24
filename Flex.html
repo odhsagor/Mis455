@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="flexbox-page">
+     <!-- Navbar Start -->
+     <nav>
+        <div class="navWrap">
+            <div class="logo">
+                <h1>MIS 455</h1>
+            </div>
+            <div class="navItems">
+                <a class="navItem" href="index.html" >Home</a>
+            <a class="navItem" href="about.html" >About</a>
+            <a class="navItem" href="Flex.html" >Flex</a>
+            <a class="navItem" href="Grid.html">Grid</a>
+            <a class="navItem" href="gallary.html">Gallery</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <h1 style="margin-top: 50px; " class="details-title">We will learn about Css Flexbox</h1>
+    <Section class="intro">
+        <img src="./img/flex.webp" alt="" class="details-pic">
+        <div class="intro-details">
+            <p class="f-p">
+                Flexbox, or the Flexible Box Layout, is a CSS3 layout model that provides a more efficient way to design, align, and distribute space among items in a container, even when their sizes are unknown or dynamic. The flexible box layout module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. This article gives an outline of the main features of flexbox, which we will be exploring in more detail in the rest of these guides.
+            </p>
+            <button class="flex-btn"><a href="https://youtu.be/kRS5ficucNM?si=h7FbNcqSepbSnyt3" target="_blank">Learn More</a></button>
+        </div>
+    </Section>
+    <section class="flex-directtion">
+        <h1 class="details-title">Flex Direction</h1>
+        <p class="flex-p">Flexbox is all about controlling the distribution of elements in a row or column. By default, items will stack side-by-side in a row, but we can flip to a column with the flex-direction property</p>
+        <img src="./img/row.png" alt="" class="flex-pic">
+        <p class="flex-p">With <span>flex-direction: row</span>, the primary axis runs horizontally, from left to right. </p>
+        <img src="./img/column.png" alt="" class="flex-pic">
+        <p class="flex-p">When we flip to <span>flex-direction: column</span> flex-direction: column, the primary axis runs vertically, from top to bottom.</p>
+
+        <h3>Here's a quick visualization of these rules:</h3>
+        <img src="./img/dflex-dir.png" alt="" class="flex-pic">
+        
+    </section>
+
+    <section class="flex-directtion">
+        <h1 class="details-title">Flex Alignment</h1>
+        <p class="flex-p">We can change how children are distributed along the primary axis using the <span>justify-content:</span> property:</p>
+        <div class="pic-cont">
+            <img src="./img/a1.png" alt="">
+            <img src="./img/a2.png" alt="">
+            <img src="./img/a3.png" alt="">
+        </div>
+        <p class="flex-p">We can bunch all the items up in a particular spot (with <span> flex-start</span>,<span> center</span>, and <span> flex-end</span>), or we can spread them apart (<span> space-between</span>with,<span> space-around</span>, and<span> space-evenly</span>).</p>
+        
+        
+    </section>
+
+
+    
+</body>
+</html>
